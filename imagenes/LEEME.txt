@@ -1,0 +1,2 @@
+Poné acá las 23 imágenes con los nombres exactos que figuran en ../LEEME.txt
+(por ejemplo 02_luna_llena.jpg). Se leen solas al abrir index.html.

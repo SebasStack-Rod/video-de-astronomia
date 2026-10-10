@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¿Qué hay allá afuera? · Exposición de astronomía</title>
+<meta name="description" content="Video animado de astronomía: la Luna, las constelaciones, la Vía Láctea, un agujero negro, Venus y las sondas Voyager.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="sin-iniciar">
+
+<!-- Íconos de los controles -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></symbol>
+  <symbol id="i-pausa" viewBox="0 0 24 24"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></symbol>
+  <symbol id="i-repetir" viewBox="0 0 24 24"><path d="M12 5V2L7 6l5 4V7a5 5 0 1 1-5 5H5a7 7 0 1 0 7-7z"/></symbol>
+  <symbol id="i-ant" viewBox="0 0 24 24"><path d="M6 6h2v12H6zM9.5 12 18 6v12z"/></symbol>
+  <symbol id="i-sig" viewBox="0 0 24 24"><path d="M16 6h2v12h-2zM6 6l8.5 6L6 18z"/></symbol>
+  <symbol id="i-pant" viewBox="0 0 24 24"><path d="M4 4h6v2H6v4H4zM14 4h6v6h-2V6h-4zM4 14h2v4h4v2H4zM18 14h2v6h-6v-2h4z"/></symbol>
+  <symbol id="i-salir" viewBox="0 0 24 24"><path d="M8 4h2v6H4V8h4zM14 4h2v4h4v2h-6zM4 14h6v6H8v-4H4zM14 14h6v2h-4v4h-2z"/></symbol>
+  <symbol id="i-rayo" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></symbol>
+</svg>
+
+<canvas id="fondo" aria-hidden="true"></canvas>
+
+<div id="marco">
+<div id="escenario">
+
+<!-- =====================================================
+     ESCENA 1 · Apertura (0:00 a 0:40)
+     ===================================================== -->
+<section class="escena" id="s1" data-trans="zoom">
+  <figure class="foto fondo-total" data-in="4.5" data-q data-img="01_cielo_estrellado" data-ref="cielo" data-alt="Cielo estrellado con la Vía Láctea sobre un paisaje oscuro"></figure>
+  <div class="velo"></div>
+
+  <header class="portada">
+    <p class="marca fx-sube" data-in="9">Exposición de astronomía</p>
+    <h1 class="titulo-gigante fx-zoom" data-in="10.5">¿Qué hay<br>allá afuera?</h1>
+  </header>
+
+  <div class="preguntas-ap">
+    <p class="fx-sube" data-in="20.4">¿Qué es eso?</p>
+    <p class="fx-sube" data-in="22.4">¿Qué hay más allá?</p>
+    <p class="fx-sube" data-in="24.4">¿Estamos solos?</p>
+  </div>
+
+  <ol class="ruta">
+    <li class="fx-sube" data-in="29">La Luna</li>
+    <li class="fx-sube" data-in="30.2">Las constelaciones</li>
+    <li class="fx-sube" data-in="31.4">La Vía Láctea</li>
+    <li class="fx-sube" data-in="32.6">Un agujero negro</li>
+    <li class="fx-sube" data-in="33.8">Venus</li>
+    <li class="fx-sube" data-in="35">Las Voyager</li>
+    <li class="fx-sube" data-in="36.2">¿Estamos solos?</li>
+  </ol>
+
+  <div class="notas" hidden>
+    <p data-t="2">Si salís una noche oscura y mirás hacia arriba, vas a ver miles de puntos de luz.</p>
+    <p data-t="13.4">Durante miles de años, la humanidad se hizo las mismas preguntas: ¿qué es eso? ¿Qué hay más allá? ¿Estamos solos?</p>
+    <p data-t="26.5">Hoy vamos a hacer un viaje: empezamos por nuestro vecino más cercano, la Luna, y terminamos en el espacio entre las estrellas.</p>
+  </div>
+</section>
+
+<!-- =====================================================
+     ESCENA 2 · La Luna (0:40 a 2:40)
+     ===================================================== -->
+<section class="escena" id="s2" data-trans="zoom">
+  <header class="cabecera cue" data-in=".3">
+    <p class="marca">Escena 2 de 9, nuestro vecino más cercano</p>
+    <h2 class="titulo">La Luna</h2>
+  </header>
+
+  <!-- A: la Luna llena -->
+  <div class="beat" data-in="2" data-out="28" data-q>
+    <figure class="foto redonda gira abs" style="--x:1060px;--y:170px;--w:740px;--h:740px" data-img="02_luna_llena" data-ref="luna" data-alt="La Luna llena">
+      <figcaption>La Luna llena</figcaption>
+    </figure>
+    <div class="col corta" style="--x:96px;--y:318px;--w:900px">
+      <p class="frase fx-sube" data-in="2.5">Único satélite natural de la Tierra</p>
+      <div class="dato fx-sube" data-in="8"><b>384.400 km</b><span>de distancia a la Tierra</span></div>
+      <div class="dato fx-sube" data-in="12"><b>27,3 días</b><span>en dar una vuelta alrededor de la Tierra</span></div>
+      <div class="fx-sube" data-in="15.5">
+        <p class="frase destaca">Sin luz propia</p>
+        <p class="detalle" style="margin-top:8px">Lo que vemos es luz del Sol reflejada en su superficie.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- B: las fases (animación) -->
+  <div class="beat" data-in="28" data-out="50">
+    <div class="col corta" style="--x:820px;--y:62px;--w:1000px">
+      <p class="frase med fx-sube" data-in="30">Siempre hay una mitad iluminada</p>
+      <p class="frase med fx-sube" data-in="33.5">Desde la Tierra vemos distintas partes de esa mitad</p>
+    </div>
+    <canvas id="cv-fases" class="abs" width="1728" height="620" style="--x:96px;--y:300px;--w:1728px;--h:620px"></canvas>
+  </div>
+
+  <!-- B2: diagrama de las fases -->
+  <div class="beat" data-in="50" data-out="58">
+    <figure class="foto fija abs" style="--x:360px;--y:220px;--w:1200px;--h:620px" data-img="02_fases_luna" data-ref="fases" data-alt="Diagrama de las fases lunares">
+      <figcaption>Las fases de la Luna</figcaption>
+    </figure>
+    <p class="detalle abs fx-sube" style="--x:360px;--y:860px;--w:1200px;--h:120px;text-align:center" data-in="52">Luna nueva, creciente, cuarto creciente, gibosa creciente, luna llena, gibosa menguante, cuarto menguante, menguante.</p>
+  </div>
+
+  <!-- C: la misma cara -->
+  <div class="beat" data-in="58" data-out="84">
+    <div class="col" style="--x:96px;--y:300px;--w:780px">
+      <p class="frase grande fx-sube" data-in="59">¿Por qué siempre vemos la misma cara?</p>
+      <p class="detalle fx-sube" data-in="63">La Luna tarda casi lo mismo en girar sobre sí misma que en dar la vuelta a la Tierra.</p>
+      <p class="detalle destaca fx-sube" data-in="74">Sí gira: esa rotación sincronizada hace que veamos siempre el mismo lado.</p>
+    </div>
+    <canvas id="cv-cara" class="abs" width="924" height="760" style="--x:900px;--y:190px;--w:924px;--h:760px"></canvas>
+  </div>
+
+  <!-- D: mares y cráteres -->
+  <div class="beat" data-in="84" data-out="120" data-q>
+    <figure class="foto abs" style="--x:1000px;--y:170px;--w:824px;--h:780px" data-img="02_crateres_luna" data-ref="crateres" data-alt="Primer plano de cráteres lunares">
+      <figcaption>Cráteres y mares de la Luna</figcaption>
+    </figure>
+    <div class="col" style="--x:96px;--y:290px;--w:820px">
+      <div class="nota fx-izq" data-in="86"><h3>Mares lunares</h3><p>Regiones de antiguas erupciones volcánicas donde la lava se solidificó. Ninguno tiene agua.</p></div>
+      <div class="nota fx-izq" data-in="97"><h3>Zonas claras</h3><p>Regiones más altas y antiguas de la superficie.</p></div>
+      <div class="nota fx-izq" data-in="101.5"><h3>Cráteres</h3><p>Huecos producidos por impactos de asteroides.</p></div>
+      <div class="nota fx-izq" data-in="107"><h3>Millones de años</h3><p>Sin atmósfera que frene los impactos, sin lluvia ni viento que los borren: muchos cráteres duran millones de años.</p></div>
+    </div>
+  </div>
+
+  <div class="notas" hidden>
+    <p data-t="2">La Luna es el único satélite natural de la Tierra.</p>
+    <p data-t="7.5">Está a unos 384.400 kilómetros y tarda unos 27 días en darnos una vuelta.</p>
+    <p data-t="15.2">Pero atención: la Luna no tiene luz propia.</p>
+    <p data-t="19.7">Lo que vemos es luz del Sol que se refleja en su superficie.</p>
+    <p data-t="29">Siempre hay una mitad iluminada, pero desde la Tierra vemos distintas partes de esa mitad.</p>
+    <p data-t="37.2">Por eso parece que cambia de forma: luna nueva, creciente, cuarto creciente, gibosa creciente, luna llena, y de vuelta hacia atrás.</p>
+    <p data-t="48.8">El ciclo completo dura unos 29 días y medio.</p>
+    <p data-t="58.5">¿Y por qué siempre vemos la misma cara? Porque la Luna tarda casi lo mismo en girar sobre sí misma que en dar la vuelta a la Tierra.</p>
+    <p data-t="73.8">Ojo: sí gira, y justamente esa rotación sincronizada hace que veamos siempre el mismo lado.</p>
+    <p data-t="85">Las manchas oscuras se llaman mares lunares, pero no tienen agua: son regiones de antiguas erupciones volcánicas donde la lava se solidificó.</p>
+    <p data-t="96.6">Las zonas claras son regiones más altas y antiguas. Y los cráteres son huecos producidos por impactos de asteroides.</p>
+    <p data-t="106.5">Como la Luna casi no tiene atmósfera, nada frena los impactos, y como no hay lluvia ni viento, muchos cráteres duran millones de años.</p>
+  </div>
+</section>
+
+<!-- =====================================================
+     ESCENA 3 · Las constelaciones (2:40 a 4:20)
+     ===================================================== -->
+<section class="escena" id="s3" data-trans="subir">
+  <header class="cabecera cue" data-in=".3">
+    <p class="marca">Escena 3 de 9, el cielo de noche</p>
+    <h2 class="titulo">Las constelaciones</h2>
+  </header>
+
+  <!-- Introducción -->
+  <div class="beat" data-in="1" data-out="26">
+    <div class="col" style="--x:96px;--y:330px;--w:860px">
+      <p class="frase fx-sube" data-in="1.5">Región del cielo con estrellas que, desde la Tierra, parecen formar un dibujo</p>
+      <p class="detalle fx-sube" data-in="11.5">En realidad, esas estrellas pueden estar a distancias muy distintas entre sí.</p>
+      <p class="detalle fx-sube" data-in="18.5">Se usaron durante miles de años para orientarse y medir el tiempo,</p>
+      <p class="detalle fx-sube" data-in="22">y para contar historias.</p>
+    </div>
+    <canvas id="cv-demo" class="abs" width="820" height="620" style="--x:1000px;--y:250px;--w:820px;--h:620px"></canvas>
+  </div>
+
+  <!-- Mapa animado de cada constelación -->
+  <canvas id="cv-mapa" class="abs cue" width="1060" height="720" style="--x:96px;--y:236px;--w:1060px;--h:720px" data-in="26" data-out="100"></canvas>
+
+  <div class="beat" data-in="26" data-out="41">
+    <figure class="foto abs" style="--x:1240px;--y:250px;--w:584px;--h:300px" data-img="03_orion" data-ref="c-orion" data-alt="Constelación de Orión"><figcaption>Orión</figcaption></figure>
+    <div class="col corta" style="--x:1240px;--y:580px;--w:584px">
+      <p class="frase grande">Orión</p>
+      <p class="detalle sm fx-sube" data-in="27.5">Cinturón: tres estrellas bastante juntas.</p>
+      <p class="detalle sm fx-sube" data-in="32">Cerca está la Espada de Orión, donde se encuentra la Nebulosa de Orión.</p>
+    </div>
+  </div>
+
+  <div class="beat" data-in="41" data-out="52">
+    <figure class="foto abs" style="--x:1240px;--y:250px;--w:584px;--h:300px" data-img="03_escorpio" data-ref="c-escorpio" data-alt="Constelación de Escorpio"><figcaption>Escorpio</figcaption></figure>
+    <div class="col corta" style="--x:1240px;--y:580px;--w:584px">
+      <p class="frase grande">Escorpio</p>
+      <p class="detalle sm fx-sube" data-in="42.2">Tiene forma de escorpión.</p>
+      <p class="detalle sm fx-sube" data-in="45.5">Su estrella más conocida es Antares, una gigante roja.</p>
+    </div>
+  </div>
+
+  <div class="beat" data-in="52" data-out="63">
+    <figure class="foto abs" style="--x:1240px;--y:250px;--w:584px;--h:300px" data-img="03_sagitario" data-ref="c-sagitario" data-alt="Constelación de Sagitario"><figcaption>Sagitario</figcaption></figure>
+    <div class="col corta" style="--x:1240px;--y:580px;--w:584px">
+      <p class="frase grande">Sagitario</p>
+      <p class="detalle sm fx-sube" data-in="53.2">Representa a un arquero.</p>
+      <p class="detalle sm fx-sube" data-in="56.5">Hacia esta región del cielo está la dirección del centro de nuestra galaxia.</p>
+    </div>
+  </div>
+
+  <div class="beat" data-in="63" data-out="83">
+    <figure class="foto abs" style="--x:1240px;--y:250px;--w:584px;--h:300px" data-img="03_cruz_del_sur" data-ref="c-cruz" data-alt="Constelación de la Cruz del Sur"><figcaption>Cruz del Sur</figcaption></figure>
+    <div class="col corta" style="--x:1240px;--y:580px;--w:584px">
+      <p class="frase grande">Cruz del Sur</p>
+      <p class="detalle sm fx-sube" data-in="64.5">La más importante para quienes estamos en el hemisferio sur.</p>
+      <p class="detalle sm fx-sube" data-in="71">Sus estrellas ayudan a encontrar aproximadamente la dirección del polo sur celeste.</p>
+      <p class="detalle sm fx-sube" data-in="77">Por eso fue clave para navegar.</p>
+    </div>
+  </div>
+
+  <div class="beat" data-in="83" data-out="100">
+    <figure class="foto abs" style="--x:1240px;--y:250px;--w:584px;--h:300px" data-img="03_centauro" data-ref="c-centauro" data-alt="Constelación de Centauro"><figcaption>Centauro</figcaption></figure>
+    <div class="col corta" style="--x:1240px;--y:580px;--w:584px">
+      <p class="frase grande">Centauro</p>
+      <p class="detalle sm fx-sube" data-in="84.5">Está cerca de la Cruz del Sur.</p>
+      <p class="detalle sm fx-sube" data-in="88">Contiene Alpha Centauri, el sistema estelar más cercano al nuestro.</p>
+    </div>
+  </div>
+
+  <div class="notas" hidden>
+    <p data-t="1">Una constelación es una región del cielo con estrellas que, desde la Tierra, parecen formar un dibujo.</p>
+    <p data-t="11">En realidad esas estrellas pueden estar a distancias muy distintas entre sí.</p>
+    <p data-t="18.2">Se usaron durante miles de años para orientarse, medir el tiempo y contar historias.</p>
+    <p data-t="27">Orión es de las más fáciles de reconocer: busquen las tres estrellas juntas que forman el cinturón.</p>
+    <p data-t="37">Cerca está la Nebulosa de Orión.</p>
+    <p data-t="42">Escorpio tiene forma de escorpión y su estrella más conocida es Antares, una gigante roja.</p>
+    <p data-t="52.5">Sagitario representa a un arquero y, en esa dirección, está el centro de nuestra galaxia.</p>
+    <p data-t="63.5">Para quienes estamos en el hemisferio sur, la más importante es la Cruz del Sur: sus estrellas ayudan a encontrar aproximadamente la dirección del polo sur celeste, y por eso fue clave para navegar.</p>
+    <p data-t="83.5">Cerca está Centauro, que contiene Alpha Centauri, el sistema estelar más cercano al nuestro.</p>
+  </div>
+</section>
+
+<!-- =====================================================
+     ESCENA 4 · La Vía Láctea (4:20 a 5:20)
+     ===================================================== -->
+<section class="escena" id="s4" data-trans="zoom">
+  <header class="cabecera cue" data-in=".3">
+    <p class="marca">Escena 4 de 9, nuestra galaxia</p>
+    <h2 class="titulo">La Vía Láctea</h2>
+  </header>
+
+  <div class="beat" data-in="0" data-out="11.5" data-q>
+    <figure class="foto fondo-total" data-img="04_via_lactea" data-ref="via" data-alt="La banda de la Vía Láctea en un cielo oscuro"></figure>
+    <div class="velo abajo"></div>
+    <div class="col" style="--x:96px;--y:790px;--w:1300px">
+      <p class="frase fx-sube" data-in="2.5">La banda blanquecina de un cielo muy oscuro es nuestra galaxia</p>
+    </div>
+  </div>
+
+  <div class="beat" data-in="11.5" data-out="47" data-q>
+    <figure class="foto zoom-centro abs" style="--x:1000px;--y:150px;--w:824px;--h:800px" data-img="04_galaxia_posicion_sol" data-ref="galaxia" data-alt="Ilustración de la galaxia espiral con la ubicación del Sol">
+      <figcaption>La Vía Láctea y la posición del Sol</figcaption>
+    </figure>
+    <div class="col" style="--x:96px;--y:300px;--w:840px">
+      <div class="dato fx-sube" data-in="12.5"><b>Galaxia espiral</b><span>Con cientos de miles de millones de estrellas</span></div>
+      <p class="frase fx-sube" data-in="19.5">El Sol está en uno de sus brazos, bastante lejos del centro</p>
+      <div class="fx-sube" data-in="27.5">
+        <p class="frase destaca">Estamos adentro de la galaxia</p>
+        <p class="detalle" style="margin-top:8px" data-in="34.5">La banda que vemos es la mirada hacia las regiones con muchísimas estrellas.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="beat" data-in="46" data-out="60" data-q>
+    <figure class="foto abs" style="--x:1040px;--y:190px;--w:720px;--h:720px" data-img="04_sagittarius_a" data-ref="sgra" data-alt="Imagen de Sagittarius A*">
+      <figcaption>Sagittarius A*, imagen del Event Horizon Telescope</figcaption>
+    </figure>
+    <div class="col" style="--x:96px;--y:330px;--w:840px">
+      <p class="frase fx-sube" data-in="46.8">Hacia Sagitario, aproximadamente, está el centro galáctico</p>
+      <div class="dato fx-sube" data-in="50.5"><b>Sagittarius A*</b><span>Agujero negro supermasivo</span></div>
+    </div>
+  </div>
+
+  <div class="notas" hidden>
+    <p data-t="1">Esa banda blanquecina que se ve en un cielo muy oscuro es nuestra galaxia, la Vía Láctea.</p>
+    <p data-t="11.6">Es una galaxia espiral con cientos de miles de millones de estrellas.</p>
+    <p data-t="19.2">Nuestro Sol está en uno de sus brazos, bastante lejos del centro.</p>
+    <p data-t="27">Lo curioso es que no la vemos desde afuera: estamos adentro.</p>
+    <p data-t="34">Esa banda es lo que vemos al mirar hacia las regiones donde hay muchísimas estrellas.</p>
+    <p data-t="43.5">Y hacia Sagitario, aproximadamente, está el centro galáctico, donde vive un agujero negro supermasivo llamado Sagittarius A*.</p>
+  </div>
+</section>
+
+<!-- =====================================================
+     ESCENA 5 · Misterio 1: el agujero negro (5:20 a 6:30)
+     ===================================================== -->
+<section class="escena" id="s5" data-trans="zoom">
+  <header class="cabecera cue" data-in=".3">
+    <p class="marca">Escena 5 de 9, primer misterio</p>
+    <h2 class="titulo">El agujero negro</h2>
+  </header>
+
+  <canvas id="cv-lente" class="abs cue" width="1100" height="880" style="--x:700px;--y:100px;--w:1100px;--h:880px" data-in="2"></canvas>
+
+  <div class="beat" data-in="2.5" data-out="16.6">
+    <div class="col" style="--x:96px;--y:330px;--w:620px">
+      <p class="frase med fx-sube" data-in="3">Región donde la gravedad es tan fuerte que, pasado cierto límite, ni la luz puede escapar</p>
+      <p class="frase grande destaca fx-sube" data-in="12.8">Horizonte de sucesos</p>
+    </div>
+  </div>
+
+  <div class="beat" data-in="16.6" data-out="36.5">
+    <figure class="foto abs" style="--x:1010px;--y:170px;--w:800px;--h:700px" data-img="05_agujero_negro_m87" data-ref="m87" data-alt="Primera imagen de un agujero negro, M87*">
+      <figcaption>M87*, la primera foto de un agujero negro (Event Horizon Telescope)</figcaption>
+    </figure>
+    <div class="col" style="--x:96px;--y:300px;--w:860px">
+      <div class="nota fx-izq" data-in="17"><h3>Estrellas masivas</h3><p>Algunos agujeros negros se forman cuando una estrella muy masiva termina su vida y su núcleo colapsa por su propia gravedad.</p></div>
+      <div class="nota fx-izq" data-in="25"><h3>Supermasivos</h3><p>Tienen millones o miles de millones de veces la masa del Sol y están en el centro de muchas galaxias.</p></div>
+    </div>
+  </div>
+
+  <div class="beat" data-in="36.5" data-out="53.5">
+    <figure class="foto abs" style="--x:1000px;--y:150px;--w:820px;--h:780px" data-img="05_agujero_negro_simulacion" data-ref="sim" data-alt="Simulación de un agujero negro con disco de acreción">
+      <figcaption>Simulación con disco de acreción</figcaption>
+    </figure>
+    <div class="col" style="--x:96px;--y:300px;--w:860px">
+      <p class="frase grande fx-sube" data-in="37.5">¿Qué hay adentro?</p>
+      <p class="detalle fx-sube" data-in="41">Según la relatividad general, en el centro habría una singularidad.</p>
+      <p class="detalle fx-sube" data-in="47">Las teorías actuales de la física no logran describir qué pasa ahí.</p>
+    </div>
+  </div>
+
+  <div class="beat" data-in="53.5" data-out="70">
+    <div class="col" style="--x:96px;--y:300px;--w:700px">
+      <p class="frase med fx-sube" data-in="54.2">Sobre cómo se comportan desde afuera, sabemos muchísimo</p>
+      <p class="frase destaca fx-sube" data-in="59">El interior sigue siendo una de las preguntas abiertas más grandes de la ciencia</p>
+    </div>
+    <p class="signo fx-zoom" data-in="60.5" aria-hidden="true">?</p>
+  </div>
+
+  <div class="notas" hidden>
+    <p data-t="2">Un agujero negro es una región donde la gravedad es tan fuerte que, pasado cierto límite, ni la luz puede escapar.</p>
+    <p data-t="12.8">Ese límite se llama horizonte de sucesos.</p>
+    <p data-t="16.6">Algunos se forman cuando una estrella muy masiva termina su vida y su núcleo colapsa.</p>
+    <p data-t="24.4">Otros, los supermasivos, tienen millones o miles de millones de veces la masa del Sol, y están en el centro de muchas galaxias.</p>
+    <p data-t="37">Y ahora, el misterio: ¿qué hay adentro?</p>
+    <p data-t="41">Según la relatividad general, en el centro habría una singularidad, pero las teorías actuales de la física no logran describir qué pasa ahí.</p>
+    <p data-t="53.5">Sabemos muchísimo de cómo se comportan los agujeros negros desde afuera, pero el interior sigue siendo una de las preguntas abiertas más grandes de la ciencia.</p>
+  </div>
+</section>
+
+<!-- =====================================================
+     ESCENA 6 · Venus, el vecino extremo (6:30 a 7:40)
+     ===================================================== -->
+<section class="escena" id="s6" data-trans="zoom">
+  <header class="cabecera cue" data-in=".3">
+    <p class="marca">Escena 6 de 9, el vecino extremo</p>
+    <h2 class="titulo">Venus</h2>
+  </header>
+
+  <div class="beat" data-in="0" data-out="22.5" data-q>
+    <figure class="foto abs" style="--x:1000px;--y:150px;--w:820px;--h:780px" data-img="06_venus_cielo" data-ref="venus-cielo" data-alt="Venus en el cielo del atardecer">
+      <figcaption>Venus en el cielo del atardecer</figcaption>
+    </figure>
+    <div class="col" style="--x:96px;--y:300px;--w:840px">
+      <div class="dato fx-sube" data-in="2"><b>2.º planeta</b><span>desde el Sol</span></div>
+      <p class="frase fx-sube" data-in="6">El más brillante que se ve a simple vista</p>
+      <p class="frase fx-sube" data-in="12">Su nombre viene de la diosa romana del amor y la belleza</p>
+      <p class="detalle fx-sube" data-in="18">Es el único planeta con nombre de diosa.</p>
+    </div>
+  </div>
+
+  <div class="beat" data-in="22.5" data-out="39" data-q>
+    <figure class="foto redonda kb-out abs" style="--x:1040px;--y:190px;--w:700px;--h:700px" data-img="06_venus_sonda" data-ref="venus-sonda" data-alt="Venus visto por una sonda"></figure>
+    <div class="col" style="--x:96px;--y:330px;--w:840px">
+      <p class="frase grande fx-sube" data-in="23">Nuestro planeta gemelo</p>
+      <p class="detalle fx-sube" data-in="26.5">Por tamaño y forma se parece a la Tierra.</p>
+      <p class="detalle fx-sube" data-in="32">Tiene montañas, valles y volcanes, y está hecho de roca, igual que la Tierra.</p>
+    </div>
+  </div>
+
+  <div class="beat" data-in="39" data-out="58.5" data-q>
+    <figure class="foto abs" style="--x:1000px;--y:150px;--w:820px;--h:780px" data-img="06_venus_superficie_venera" data-ref="venus-venera" data-alt="Superficie de Venus fotografiada por las sondas Venera">
+      <figcaption>Superficie de Venus, vista por las sondas Venera</figcaption>
+    </figure>
+    <div class="termo abs fx-izq" style="--x:96px;--y:270px;--w:96px;--h:640px" data-in="42.5"><i data-in="42.5" data-dur="4"></i></div>
+    <div class="col" style="--x:250px;--y:270px;--w:700px">
+      <p class="frase fx-sube" data-in="40.5">Las diferencias son enormes</p>
+      <p class="gran-num fx-sube" data-in="42.5"><span data-in="42.5" data-dur="4" data-count="465">0</span><small>°C</small></p>
+      <p class="detalle fx-sube" data-in="47">Presión tan alta que aplastó varios módulos de aterrizaje.</p>
+      <p class="detalle fx-sube" data-in="53">Sin agua líquida.</p>
+      <p class="detalle fx-sube" data-in="55.5">Nubes de ácido sulfúrico.</p>
+    </div>
+  </div>
+
+  <div class="beat" data-in="58.5" data-out="70" data-q>
+    <figure class="foto redonda gira-inv abs" style="--x:1040px;--y:190px;--w:700px;--h:700px" data-img="06_venus_sonda" data-ref="venus-sonda" data-alt="Venus visto por una sonda"></figure>
+    <svg class="abs flecha-giro cue" viewBox="0 0 760 760" style="--x:1010px;--y:160px;--w:760px;--h:760px" data-in="59" aria-hidden="true">
+      <circle cx="380" cy="380" r="362" transform="rotate(-90 380 380)" data-trazo="3.5" data-in="59"/>
+      <path d="M350 -4 L394 18 L350 40" data-in="62.2"/>
+    </svg>
+    <div class="col" style="--x:96px;--y:330px;--w:840px">
+      <p class="frase grande fx-sube" data-in="59">Gira al revés que casi todos los planetas</p>
+      <p class="detalle fx-sube" data-in="63">No tiene lunas.</p>
+      <p class="detalle fx-sube" data-in="65.5">Tiene un cuasisatélite llamado Zoozve.</p>
+    </div>
+  </div>
+
+  <div class="notas" hidden>
+    <p data-t="1.5">Venus es el segundo planeta desde el Sol y el más brillante que se ve a simple vista.</p>
+    <p data-t="11.3">Su nombre viene de la diosa romana del amor y la belleza, y es el único planeta con nombre de diosa.</p>
+    <p data-t="22.7">Por tamaño y forma se parece a la Tierra, y se lo llamó nuestro planeta gemelo.</p>
+    <p data-t="31.4">Tiene montañas, valles, volcanes y está hecho de roca, igual que la Tierra.</p>
+    <p data-t="40">Pero las diferencias son enormes.</p>
+    <p data-t="42.9">Su temperatura ronda los 465 °C y su presión es tan alta que aplastó varios módulos de aterrizaje.</p>
+    <p data-t="52.7">No tiene agua líquida y sus nubes son de ácido sulfúrico.</p>
+    <p data-t="58.8">Además, gira al revés que casi todos los planetas, y no tiene lunas, aunque tiene un cuasisatélite llamado Zoozve.</p>
+  </div>
+</section>
+
+<!-- =====================================================
+     ESCENA 7 · Las Voyager (7:40 a 9:00)
+     ===================================================== -->
+<section class="escena" id="s7" data-trans="subir">
+  <header class="cabecera cue" data-in=".3">
+    <p class="marca">Escena 7 de 9, dos sondas gemelas</p>
+    <h2 class="titulo">Las Voyager</h2>
+  </header>
+
+  <div class="beat" data-in="1" data-out="31">
+    <figure class="foto fija fx-barrido abs" style="--x:96px;--y:270px;--w:1150px;--h:660px" data-in="3" data-img="07_voyager_trayectorias" data-ref="voyager-mapa" data-alt="Mapa de las trayectorias de las Voyager">
+      <figcaption>Trayectorias de las Voyager</figcaption>
+    </figure>
+    <div class="col corta" style="--x:1300px;--y:236px;--w:524px">
+      <p class="frase med fx-sube" data-in="2.5">En 1977, la NASA lanzó dos sondas gemelas</p>
+      <div class="tarjeta fx-der" data-in="10">
+        <h3>Voyager 2</h3>
+        <p>Salió primero, el 20 de agosto.</p>
+        <p>Visitó Júpiter, Saturno, Urano y Neptuno.</p>
+      </div>
+      <div class="tarjeta fx-der" data-in="20">
+        <h3>Voyager 1</h3>
+        <p>Salió el 5 de septiembre, unas dos semanas después.</p>
+        <p>Visitó Júpiter y Saturno.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="beat" data-in="31" data-out="48.4" data-q>
+    <figure class="foto abs" style="--x:1000px;--y:150px;--w:820px;--h:780px" data-img="07_voyager_sonda" data-ref="voyager-sonda" data-alt="La sonda Voyager">
+      <figcaption>Una de las sondas Voyager</figcaption>
+    </figure>
+    <div class="col" style="--x:96px;--y:300px;--w:840px">
+      <p class="frase fx-sube" data-in="31.5">Terminada su misión, siguieron viaje hacia el espacio entre las estrellas</p>
+      <div class="dato fx-sube" data-in="38.5"><b class="med">25 de agosto de 2012</b><span>La Voyager 1 salió de la heliosfera, la gran burbuja magnética del Sol</span></div>
+    </div>
+  </div>
+
+  <div class="beat" data-in="48.4" data-out="72">
+    <div class="cifra abs fx-sube" style="--x:96px;--y:250px;--w:860px;--h:340px" data-in="49">
+      <p class="quien">Voyager 1, a más de</p>
+      <b><span data-in="49" data-dur="4" data-count="25000">0</span><small>millones de km</small></b>
+      <span>de distancia de nosotros</span>
+    </div>
+    <div class="cifra abs fx-sube" style="--x:984px;--y:250px;--w:840px;--h:340px" data-in="55">
+      <p class="quien">Voyager 2, a unos</p>
+      <b><span data-in="55" data-dur="4" data-count="21000">0</span><small>millones de km</small></b>
+      <span>de distancia de nosotros</span>
+    </div>
+    <div class="cifra abs fx-sube" style="--x:96px;--y:620px;--w:860px;--h:340px" data-in="63.5">
+      <p class="quien">La Voyager 1 se aleja a unos</p>
+      <b><span data-in="63.5" data-dur="2.5" data-count="17">0</span><small>km por segundo</small></b>
+      <span>de nuestro planeta</span>
+    </div>
+    <div class="cifra abs fx-sube" style="--x:984px;--y:620px;--w:840px;--h:340px" data-in="67.5">
+      <p class="quien">Nos manda datos a solo</p>
+      <b><span data-in="67.5" data-dur="2.5" data-count="160">0</span><small>bits por segundo</small></b>
+      <span>Muchísimo menos que cualquier celular</span>
+    </div>
+  </div>
+
+  <div class="beat" data-in="72" data-out="80" data-q>
+    <figure class="foto abs" style="--x:96px;--y:260px;--w:900px;--h:700px" data-img="07_pale_blue_dot" data-ref="pale" data-alt="Un punto azul pálido, fotografía de la Voyager 1">
+      <figcaption>Un punto azul pálido, foto de la Voyager 1</figcaption>
+    </figure>
+    <div class="col" style="--x:1080px;--y:400px;--w:740px">
+      <p class="frase grande fx-sube" data-in="72.8">Un punto azul pálido</p>
+      <p class="detalle fx-sube" data-in="75">Foto de la Voyager 1.</p>
+    </div>
+  </div>
+
+  <div class="notas" hidden>
+    <p data-t="2">En 1977, la NASA lanzó dos sondas gemelas: Voyager 1 y Voyager 2.</p>
+    <p data-t="9.5">La Voyager 2 salió primero, el 20 de agosto, y visitó cuatro planetas: Júpiter, Saturno, Urano y Neptuno.</p>
+    <p data-t="19.8">La Voyager 1 salió unas dos semanas después, el 5 de septiembre, y visitó Júpiter y Saturno.</p>
+    <p data-t="31">Terminada su misión, siguieron viaje hacia el espacio entre las estrellas.</p>
+    <p data-t="37.4">La Voyager 1 salió de la heliosfera, la gran burbuja magnética del Sol, el 25 de agosto de 2012.</p>
+    <p data-t="48.4">Hoy, casi 49 años después, la Voyager 1 está a más de 25.000 millones de kilómetros de nosotros, y la Voyager 2 a unos 21.000 millones.</p>
+    <p data-t="63.2">La Voyager 1 se aleja a unos 17 kilómetros por segundo y nos manda datos a solo 160 bits por segundo: muchísimo menos que cualquier celular.</p>
+  </div>
+</section>
+
+<!-- =====================================================
+     ESCENA 8 · El disco de oro (9:00 a 10:00)
+     ===================================================== -->
+<section class="escena" id="s8" data-trans="zoom">
+  <header class="cabecera cue" data-in=".3">
+    <p class="marca">Escena 8 de 9, un mensaje para el cosmos</p>
+    <h2 class="titulo">El disco de oro</h2>
+  </header>
+
+  <div class="beat" data-in="0.5" data-out="10.5" data-q>
+    <figure class="foto redonda gira abs" style="--x:1020px;--y:170px;--w:740px;--h:740px" data-img="08_disco_oro" data-ref="disco" data-alt="Primer plano del disco de oro de las Voyager"></figure>
+    <div class="col" style="--x:96px;--y:330px;--w:860px">
+      <p class="frase fx-sube" data-in="1.5">Por si alguna vez se cruzaban con vida extraterrestre</p>
+      <p class="detalle fx-sube" data-in="6">La NASA incluyó en cada sonda un disco de oro.</p>
+    </div>
+  </div>
+
+  <div class="beat" data-in="10.5" data-out="18" data-q>
+    <figure class="foto abs" style="--x:1020px;--y:170px;--w:740px;--h:740px" data-img="08_disco_oro_instrucciones" data-ref="cubierta" data-alt="Cubierta del disco de oro con instrucciones grabadas">
+      <figcaption>La cubierta con las instrucciones grabadas</figcaption>
+    </figure>
+    <div class="col" style="--x:96px;--y:330px;--w:860px">
+      <p class="frase fx-sube" data-in="11">Sonidos e imágenes de la Tierra</p>
+      <p class="detalle fx-sube" data-in="13.5">Las instrucciones vienen grabadas en la cubierta.</p>
+    </div>
+  </div>
+
+  <div class="beat" data-in="18" data-out="47.5">
+    <div class="col corta" style="--x:96px;--y:290px;--w:860px">
+      <p class="gran-num fx-sube" data-in="18.6"><span data-in="18.6" data-dur="1.6" data-count="115">0</span><small>imágenes</small></p>
+      <div class="rejilla fx-sube" data-in="19.2" data-dur="4" data-count="115"></div>
+    </div>
+    <p class="sonido abs fx-sube" style="--x:1000px;--y:230px;--w:824px;--h:70px" data-in="20.2" data-out="21.8">Olas</p>
+    <p class="sonido abs fx-sube" style="--x:1000px;--y:230px;--w:824px;--h:70px" data-in="21.8" data-out="23.4">Viento</p>
+    <p class="sonido abs fx-sube" style="--x:1000px;--y:230px;--w:824px;--h:70px" data-in="23.4" data-out="25">Truenos</p>
+    <p class="sonido abs fx-sube" style="--x:1000px;--y:230px;--w:824px;--h:70px" data-in="25" data-out="26.6">Pájaros</p>
+    <p class="sonido abs fx-sube" style="--x:1000px;--y:230px;--w:824px;--h:70px" data-in="26.6" data-out="28.2">Ballenas</p>
+    <canvas id="cv-ondas" class="abs cue" width="824" height="300" style="--x:1000px;--y:310px;--w:824px;--h:300px" data-in="20"></canvas>
+    <div class="col corta" style="--x:1000px;--y:650px;--w:824px">
+      <p class="detalle fx-sube" data-in="25.5">Música de distintas culturas y épocas</p>
+      <p class="detalle fx-sube" data-in="29">Saludos en 55 idiomas</p>
+      <p class="detalle fx-sube" data-in="33.5">Hasta el sonido del beso de una madre a su bebé</p>
+      <p class="detalle destaca fx-sube" data-in="39.5">Mensajes del presidente Carter y del secretario general de la ONU</p>
+    </div>
+  </div>
+
+  <div class="beat" data-in="47.5" data-out="60">
+    <p class="botella abs fx-zoom" style="--x:160px;--y:360px;--w:1600px;--h:360px" data-in="48.2">Una botella al mar cósmico</p>
+  </div>
+
+  <div class="notas" hidden>
+    <p data-t="1.5">Por si alguna vez se cruzaban con vida extraterrestre, la NASA incluyó en cada sonda un disco de oro con sonidos e imágenes de la Tierra.</p>
+    <p data-t="18.3">Tiene 115 imágenes, sonidos de olas, viento, truenos, pájaros y ballenas, música de distintas culturas y épocas, saludos en 55 idiomas, hasta el sonido del beso de una madre a su bebé.</p>
+    <p data-t="39">También lleva mensajes del presidente Carter y del secretario general de la ONU.</p>
+    <p data-t="48">Es, literalmente, una botella al mar cósmico.</p>
+  </div>
+</section>
+
+<!-- =====================================================
+     ESCENA 9 · Cierre: ¿estamos solos? (10:00 a 11:00)
+     ===================================================== -->
+<section class="escena" id="s9" data-trans="zoom">
+  <figure class="foto fondo-total kb-out" data-in="0" data-q data-img="01_cielo_estrellado" data-ref="cielo" data-alt="Cielo estrellado con la Vía Láctea"></figure>
+  <div class="velo"></div>
+
+  <header class="cabecera cue" data-in=".3">
+    <p class="marca">Escena 9 de 9, cierre</p>
+    <h2 class="titulo">Una pregunta abierta</h2>
+  </header>
+
+  <div class="beat" data-in="1" data-out="21.5">
+    <figure class="foto abs" style="--x:1000px;--y:230px;--w:820px;--h:560px" data-img="09_exoplanetas" data-ref="exo" data-alt="Ilustración de exoplanetas">
+      <figcaption>Ilustración de exoplanetas</figcaption>
+    </figure>
+    <div class="col" style="--x:96px;--y:310px;--w:840px">
+      <div class="dato fx-sube" data-in="2.5"><b>Miles de exoplanetas</b><span>Planetas que orbitan otras estrellas</span></div>
+      <p class="detalle fx-sube" data-in="9.5">Los científicos buscan los que puedan tener agua líquida.</p>
+      <p class="frase destaca fx-sube" data-in="15.5">Hasta ahora no hay evidencia confirmada de vida extraterrestre</p>
+    </div>
+  </div>
+
+  <div class="beat" data-in="21.5" data-out="33">
+    <p class="pregunta-grande abs" style="--x:140px;--y:300px;--w:1640px;--h:560px" data-in="22" data-dur="8.5" data-lineal data-escribir>¿La Tierra es el único lugar donde apareció la vida, o hay otros mundos con vida?</p>
+  </div>
+
+  <div class="beat" data-in="33" data-out="55.5">
+    <div class="col" style="--x:140px;--y:290px;--w:1500px">
+      <p class="detalle fx-sube" data-in="33.5">La próxima vez que salgan de noche</p>
+      <p class="frase grande fx-sube" data-in="36.5">Miren la Luna</p>
+      <p class="frase grande fx-sube" data-in="39.5">Busquen la Cruz del Sur</p>
+      <p class="frase grande fx-sube" data-in="42.5">Intenten ver la banda de la Vía Láctea</p>
+      <p class="detalle destaca fx-sube" data-in="46.5">En algún lugar, una botella al mar sigue viajando, esperando que alguien la encuentre.</p>
+    </div>
+  </div>
+
+  <div class="beat" data-in="55.5" data-out="60">
+    <p class="botella abs fx-zoom" style="--x:160px;--y:380px;--w:1600px;--h:260px" data-in="56">Gracias</p>
+  </div>
+
+  <div class="notas" hidden>
+    <p data-t="1.5">Hoy sabemos que existen miles de exoplanetas, planetas que orbitan otras estrellas, y los científicos buscan los que puedan tener agua líquida.</p>
+    <p data-t="13.4">Pero hay un dato importante: hasta ahora no hay evidencia confirmada de vida extraterrestre.</p>
+    <p data-t="21.2">La pregunta sigue abierta: ¿la Tierra es el único lugar donde apareció la vida, o hay otros mundos con vida?</p>
+    <p data-t="33">La próxima vez que salgan de noche, miren la Luna, busquen la Cruz del Sur, intenten ver la banda de la Vía Láctea.</p>
+    <p data-t="45.5">Y piensen que en algún lugar, una botella al mar sigue viajando, esperando que alguien la encuentre.</p>
+    <p data-t="55">Gracias.</p>
+  </div>
+</section>
+
+<!-- =====================================================
+     CRÉDITOS
+     ===================================================== -->
+<section class="escena" id="s10" data-trans="zoom">
+  <div class="creditos">
+    <h2 class="cue fx-sube" data-in="0.5">Fuentes de las imágenes</h2>
+    <ul>
+      <li class="cue fx-sube" data-in="1.5">NASA</li>
+      <li class="cue fx-sube" data-in="2.3">ESO</li>
+      <li class="cue fx-sube" data-in="3.1">Wikimedia Commons</li>
+      <li class="cue fx-sube" data-in="3.9">Event Horizon Telescope</li>
+    </ul>
+    <p class="fin-texto cue fx-sube" data-in="6">¿Qué hay allá afuera? Exposición de astronomía</p>
+    <div class="acciones cue fx-sube" data-in="8">
+      <button class="boton primario" id="btn-repetir" type="button">Volver a ver</button>
+      <button class="boton" id="btn-preguntas" type="button">Preguntas para el público</button>
+    </div>
+  </div>
+</section>
+
+<div id="subtitulo" aria-live="polite"></div>
+</div><!-- /escenario -->
+</div><!-- /marco -->
+
+<!-- Pantalla de inicio -->
+<div id="inicio">
+  <div class="inicio-caja">
+    <h1>¿Qué hay allá afuera?</h1>
+    <p>Exposición de astronomía. Un viaje de unos 11 minutos que empieza en la Luna y termina en el espacio entre las estrellas.</p>
+    <div class="inicio-acciones">
+      <button class="boton primario" id="btn-comenzar" type="button">Comenzar</button>
+      <button class="boton" id="btn-comenzar-pant" type="button">Comenzar en pantalla completa</button>
+    </div>
+    <p class="atajos">
+      <kbd>Espacio</kbd> pausa y reanuda &nbsp; <kbd>←</kbd> <kbd>→</kbd> saltan 5 segundos &nbsp; <kbd>↑</kbd> <kbd>↓</kbd> cambian de escena<br>
+      <kbd>F</kbd> pantalla completa &nbsp; <kbd>N</kbd> texto de la narración &nbsp; <kbd>L</kbd> modo liviano &nbsp; <kbd>P</kbd> preguntas
+    </p>
+  </div>
+</div>
+
+<!-- Controles -->
+<div id="controles" role="toolbar" aria-label="Controles del video">
+  <button class="btn" id="btn-play" type="button" aria-label="Reproducir o pausar" title="Reproducir o pausar (Espacio)">
+    <svg class="ic" id="ic-play"><use href="#i-play"/></svg>
+    <svg class="ic oculto" id="ic-pausa"><use href="#i-pausa"/></svg>
+    <svg class="ic oculto" id="ic-repetir"><use href="#i-repetir"/></svg>
+  </button>
+  <button class="btn" id="btn-ant" type="button" aria-label="Escena anterior" title="Escena anterior"><svg class="ic"><use href="#i-ant"/></svg></button>
+  <button class="btn" id="btn-sig" type="button" aria-label="Escena siguiente" title="Escena siguiente"><svg class="ic"><use href="#i-sig"/></svg></button>
+  <div id="linea" role="slider" tabindex="0" aria-label="Línea de tiempo" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+  <span id="tiempo">0:00 / 0:00</span>
+  <button class="btn" id="btn-sub" type="button" aria-label="Mostrar texto de la narración" title="Texto de la narración (N)">CC</button>
+  <button class="btn" id="btn-liviano" type="button" aria-label="Modo liviano" title="Modo liviano para PC con pocos recursos (L)"><svg class="ic"><use href="#i-rayo"/></svg></button>
+  <button class="btn" id="btn-pantalla" type="button" aria-label="Pantalla completa" title="Pantalla completa (F)">
+    <svg class="ic" id="ic-entrar"><use href="#i-pant"/></svg>
+    <svg class="ic oculto" id="ic-salir"><use href="#i-salir"/></svg>
+  </button>
+</div>
+<div id="tip" aria-hidden="true"></div>
+
+<!-- Preguntas para el público -->
+<div id="preguntas" role="dialog" aria-modal="true" aria-labelledby="pre-titulo">
+  <div class="pre-caja">
+    <h2 id="pre-titulo">Preguntas para el público</h2>
+    <ol>
+      <li>¿Por qué la Luna no tiene luz propia?</li>
+      <li>¿Por qué vemos siempre la misma cara?</li>
+      <li>¿Cómo sabemos dónde está el sur?</li>
+      <li>¿Estamos dentro o fuera de la Vía Láctea?</li>
+      <li>¿Qué hay en el centro de nuestra galaxia?</li>
+      <li>¿Qué pasaría si pudiéramos atravesar el horizonte de un agujero negro?</li>
+    </ol>
+    <button class="boton" id="btn-cerrar-pre" type="button">Cerrar</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
